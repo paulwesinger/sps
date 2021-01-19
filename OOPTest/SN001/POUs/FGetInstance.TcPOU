@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.3">
+  <POU Name="FGetInstance" Id="{62980089-a5aa-4474-854e-0fc0ffc9faee}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION FGetInstance : STRING
+VAR_INPUT
+	isample: I_BaseString;
+END_VAR
+VAR
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[FGetInstance := isample.GetString();
+]]></ST>
+    </Implementation>
+    <LineIds Name="FGetInstance">
+      <LineId Id="9" Count="0" />
+      <LineId Id="7" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

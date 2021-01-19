@@ -1,13 +1,26 @@
-<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1">
-  <POU Name="MAIN" Id="{ac1e37e4-793e-4297-96ae-c58896c5bc66}">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.3">
+  <POU Name="MAIN" Id="{ac1e37e4-793e-4297-96ae-c58896c5bc66}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM MAIN
 VAR
+	fbString: FB_TestString;
+	fbTest2 : FB_Test2;
+	stest	: STRING;
+	sTest2 	: STRING;
 END_VAR
-]]>
-    </Declaration>
+]]></Declaration>
     <Implementation>
-      <ST><![CDATA[]]></ST>
+      <ST><![CDATA[
+
+
+stest := FGetInstance(isample := fbString);
+sTest2 := FGetInstance(isample:=fbTest2); ]]></ST>
     </Implementation>
+    <LineIds Name="MAIN">
+      <LineId Id="18" Count="1" />
+      <LineId Id="10" Count="0" />
+      <LineId Id="2" Count="0" />
+      <LineId Id="28" Count="0" />
+    </LineIds>
   </POU>
 </TcPlcObject>

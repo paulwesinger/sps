@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.3">
+  <Itf Name="I_BaseString" Id="{4b6fe35d-e7c6-418c-8b42-5b4a18d359b4}">
+    <Declaration><![CDATA[INTERFACE I_BaseString
+]]></Declaration>
+    <Method Name="GetString" Id="{b638e8ac-f10c-4091-b19e-fb9afc817c1e}">
+      <Declaration><![CDATA[METHOD GetString : STRING
+VAR_INPUT
+	
+END_VAR
+]]></Declaration>
+    </Method>
+  </Itf>
+</TcPlcObject>

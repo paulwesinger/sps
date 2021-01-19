@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.3">
+  <POU Name="FB_Test2" Id="{28e41248-cbcc-4a89-98e5-2bab5b216995}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_Test2 IMPLEMENTS I_BaseString
+VAR_INPUT
+END_VAR
+VAR_OUTPUT
+END_VAR
+VAR
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[]]></ST>
+    </Implementation>
+    <Method Name="GetString" Id="{e1df74f5-4daf-447a-926f-32a21f571b66}">
+      <Declaration><![CDATA[{warning 'Methodenimplementierung hinzufügen'}
+METHOD GetString : STRING
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[GetString := 'Test 2';]]></ST>
+      </Implementation>
+    </Method>
+    <LineIds Name="FB_Test2">
+      <LineId Id="9" Count="0" />
+    </LineIds>
+    <LineIds Name="FB_Test2.GetString">
+      <LineId Id="4" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>
